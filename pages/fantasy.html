@@ -3,26 +3,35 @@
   <head>
     <title>Final Fantasy</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
   </head>
   <body>
-    <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="./astrobot.html">ASTRO BOT</a></li>
-        <li><a href="./balatro.html">Balatro</a></li>
-        <li><a href="./wukong.html">Black Myth: Wukong</a></li>
-        <li><a href="./elden.html">Elden Ring Shadow of the Erdtree</a></li>
-        <li><a href="./metalphor.html">Metaphor: ReFantazio</a></li>
-    </ul>
+    <header>
+        <div class="logo"><a href="../index.html">G-News</a></div>
+        <div class="select-container">
+          <label for="game-select">Escolha um jogo:</label>
+          <select id="game-select" onchange="navigateToPage(this)">
+            <option value="" disabled selected>Selecione...</option>
+            <option value="/pages/astrobot.html">ASTRO BOT</option>
+            <option value="/pages/balatro.html">Balatro</option>
+            <option value="/pages/wukong.html">Black Myth: Wukong</option>
+            <option value="/pages/elden.html">Elden Ring Shadow of the Erdtree</option>
+            <option value="/pages/fantasy.html">Final Fantasy VII Rebirth</option>
+            <option value="/pages/metalphor.html">Metaphor: ReFantazio</option>
+          </select>
+        </div>
+      </header>
+      <div class = "container">
     <h1>O jogo</h1>
     
-    <p>Final Fantasy VII Rebirth é a segunda parte do projeto de remake de três partes Final Fantasy VII,</p>
-    <p>cujo objetivo é refazer o RPG Final Fantasy VII de 1997. O jogo segue Final Fantasy VII Remake e é a</p>
-    <p>segunda de três partes, lançada em 29 de fevereiro de 2024 para o PlayStation 5. </p>
-    <p>O título foi anunciado em 2022 durante uma pequena apresentação comemorando o 25º aniversário do Final </p>
-    <p>Fantasy VII original , juntamente com a revelação de Crisis Core -Final Fantasy VII- Reunion , o lançamento </p>
-    <p>de Final Fantasy VII Remake no Steam e detalhes relacionados a Final Fantasy VII Ever Crisis e Final Fantasy VII </p>
-    <p>The First Soldier . [1] Uma versão demo foi lançada em 6 de fevereiro de 2024. Em 21 de fevereiro de 2024, a demo foi </p>
-    <p>atualizada com uma seção adicional.</p>
+    <p>Final Fantasy VII Rebirth é a segunda parte do projeto de remake de três partes Final Fantasy VII,
+    cujo objetivo é refazer o RPG Final Fantasy VII de 1997. O jogo segue Final Fantasy VII Remake e é a
+    segunda de três partes, lançada em 29 de fevereiro de 2024 para o PlayStation 5. 
+    O título foi anunciado em 2022 durante uma pequena apresentação comemorando o 25º aniversário do Final 
+    Fantasy VII original , juntamente com a revelação de Crisis Core -Final Fantasy VII- Reunion , o lançamento 
+    de Final Fantasy VII Remake no Steam e detalhes relacionados a Final Fantasy VII Ever Crisis e Final Fantasy VII 
+    The First Soldier .Uma versão demo foi lançada em 6 de fevereiro de 2024. Em 21 de fevereiro de 2024, a demo foi 
+    atualizada com uma seção adicional.</p>
 
     <h2>Gameplay</h2>
 
@@ -64,5 +73,17 @@
             </tr>
         </tbody>
     </table>
+    </div>
+    <footer>
+        <p>&copy; 2024 Gregory2786</p>
+    </footer>
+    <script>
+        function navigateToPage(select) {
+        const url = select.value;
+        if (url) {
+            window.location.href = url;
+        }
+        }
+    </script>
   </body>
 </html>

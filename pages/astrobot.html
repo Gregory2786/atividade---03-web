@@ -3,67 +3,88 @@
   <head>
     <title>ASTRO BOT</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
   </head>
   <body>
-    <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="./balatro.html">Balatro</a></li>
-        <li><a href="./wukong.html">Black Myth: Wukong</a></li>
-        <li><a href="./elden.html">Elden Ring Shadow of the Erdtree</a></li>
-        <li><a href="./fantasy.html">Final Fantasy VII Rebirth</a></li>
-        <li><a href="./metalphor.html">Metaphor: ReFantazio</a></li>
-    </ul>
-    <h1> O jogo </h1>
-        <p>Astro Bot ​​é umjogo de plataforma
-            desenvolvido pelaTeam Asobie publicado pela Sony 
-            Interactive Entertainmentpara o PlayStation 5.</p><p>É uma 
-            sequência de Astro's Playroom (2020) e o primeiro jogo
-            com o personagem a não ser desenvolvido peloJapan Studio devido</p><p>
-            à sua dissolução. O jogo foi lançado em comemoração ao PlayStation e
-            recebeu aclamação universal da crítica.</p>
+    <header>
+        <div class="logo"><a href="../index.html">G-News</a></div>
+        <div class="select-container">
+          <label for="game-select">Escolha um jogo:</label>
+          <select id="game-select" onchange="navigateToPage(this)">
+            <option value="" disabled selected>Selecione...</option>
+            <option value="/pages/astrobot.html">ASTRO BOT</option>
+            <option value="/pages/balatro.html">Balatro</option>
+            <option value="/pages/wukong.html">Black Myth: Wukong</option>
+            <option value="/pages/elden.html">Elden Ring Shadow of the Erdtree</option>
+            <option value="/pages/fantasy.html">Final Fantasy VII Rebirth</option>
+            <option value="/pages/metalphor.html">Metaphor: ReFantazio</option>
+          </select>
+        </div>
+      </header>
+      <div class = "container">
+        <h1> O jogo </h1>
+            <p>Astro Bot ​​é umjogo de plataforma
+                desenvolvido pelaTeam Asobie publicado pela Sony 
+                Interactive Entertainmentpara o PlayStation 5. É uma 
+                sequência de Astro's Playroom (2020) e o primeiro jogo
+                com o personagem a não ser desenvolvido peloJapan Studio devido
+                à sua dissolução. O jogo foi lançado em comemoração ao PlayStation e
+                recebeu aclamação universal da crítica.</p>
 
-    <h2>Gameplay:</h2>
-    <iframe width="560" height="315" 
-    src="https://www.youtube.com/embed/6In56uk9XVU?si=ZJEH51sHrhZkPHiw" 
-    title="YouTube video player" frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    \referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
-    
-    <h2>requisitos recomendados para jogar</h2>
-    
-    <table>
-        <thead>
-            <tr>
-                <th>Requisito</th>
-                <th>Detalhes</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Sistema Operacional</td>
-                <td>Windows 7 SP1 ou superior</td>
-            </tr>
-            <tr>
-                <td>Processador</td>
-                <td>Intel Core i5-2500K ou equivalente</td>
-            </tr>
-            <tr>
-                <td>Memória RAM</td>
-                <td>8 GB de RAM</td>
-            </tr>
-            <tr>
-                <td>Placa de Vídeo</td>
-                <td>NVIDIA GeForce GTX 970 / AMD Radeon RX 480 ou equivalente</td>
-            </tr>
-            <tr>
-                <td>Espaço em Disco</td>
-                <td>5 GB de espaço disponível</td>
-            </tr>
-            <tr>
-                <td>DirectX</td>
-                <td>Versão 11</td>
-            </tr>
-        </tbody>
-    </table>
+        <h2>Gameplay:</h2>
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/6In56uk9XVU?si=ZJEH51sHrhZkPHiw" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        \referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+        
+        <h2>requisitos recomendados para jogar</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Requisito</th>
+                    <th>Detalhes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sistema Operacional</td>
+                    <td>Windows 7 SP1 ou superior</td>
+                </tr>
+                <tr>
+                    <td>Processador</td>
+                    <td>Intel Core i5-2500K ou equivalente</td>
+                </tr>
+                <tr>
+                    <td>Memória RAM</td>
+                    <td>8 GB de RAM</td>
+                </tr>
+                <tr>
+                    <td>Placa de Vídeo</td>
+                    <td>NVIDIA GeForce GTX 970 / AMD Radeon RX 480 ou equivalente</td>
+                </tr>
+                <tr>
+                    <td>Espaço em Disco</td>
+                    <td>5 GB de espaço disponível</td>
+                </tr>
+                <tr>
+                    <td>DirectX</td>
+                    <td>Versão 11</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <footer>
+            <p>&copy; 2024 Gregory2786</p>
+          </footer>
+          <script>
+            function navigateToPage(select) {
+              const url = select.value;
+              if (url) {
+                window.location.href = url;
+              }
+            }
+          </script>
   </body>
 </html>

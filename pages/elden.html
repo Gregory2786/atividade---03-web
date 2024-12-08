@@ -3,24 +3,32 @@
   <head>
     <title>Elden Ring</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
   </head>
   <body>
-    <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="./astrobot.html">ASTRO BOT</a></li>
-        <li><a href="./balatro.html">Balatro</a></li>
-        <li><a href="./wukong.html">Black Myth: Wukong</a></li>
-        <li><a href="./fantasy.html">Final Fantasy VII Rebirth</a></li>
-        <li><a href="./metalphor.html">Metaphor: ReFantazio</a></li>
-    </ul>
-
+    <header>
+        <div class="logo"><a href="../index.html">G-News</a></div>
+        <div class="select-container">
+          <label for="game-select">Escolha um jogo:</label>
+          <select id="game-select" onchange="navigateToPage(this)">
+            <option value="" disabled selected>Selecione...</option>
+            <option value="/pages/astrobot.html">ASTRO BOT</option>
+            <option value="/pages/balatro.html">Balatro</option>
+            <option value="/pages/wukong.html">Black Myth: Wukong</option>
+            <option value="/pages/elden.html">Elden Ring Shadow of the Erdtree</option>
+            <option value="/pages/fantasy.html">Final Fantasy VII Rebirth</option>
+            <option value="/pages/metalphor.html">Metaphor: ReFantazio</option>
+          </select>
+        </div>
+      </header>
+      <div class = "container">
     <h1>O jogo</h1>
-    <p>Shadow of Erdtree é uma expansão completa para Elden Ring que adiciona um mapa totalmente </p>
-    <p>novo com 70 novas armas, 10 novos escudos, 39 novos talismãs, 14 novas feitiçarias, 28 novos encantamentos, </p>
-    <p>20 novas cinzas espirituais, 25 novas cinzas de guerra, 30 novos conjuntos de armaduras e novos consumíveis e </p>
-    <p>itens artesanais. A expansão foi anunciada via Twitter pela conta oficial do Elden Ring em 28 de fevereiro de 2023.</p>
-    <p>Um trailer de jogabilidade foi lançado em 21 de fevereiro de 2024, e um trailer de história foi lançado em 21 de maio de 2024.</p>
-    <p>A data de lançamento doConteúdo para download foi 21 de junho de 2024.</p>
+    <p>Shadow of Erdtree é uma expansão completa para Elden Ring que adiciona um mapa totalmente 
+    novo com 70 novas armas, 10 novos escudos, 39 novos talismãs, 14 novas feitiçarias, 28 novos encantamentos,
+    20 novas cinzas espirituais, 25 novas cinzas de guerra, 30 novos conjuntos de armaduras e novos consumíveis e 
+    itens artesanais. A expansão foi anunciada via Twitter pela conta oficial do Elden Ring em 28 de fevereiro de 2023.
+    Um trailer de jogabilidade foi lançado em 21 de fevereiro de 2024, e um trailer de história foi lançado em 21 de maio de 2024.
+    A data de lançamento doConteúdo para download foi 21 de junho de 2024.</p>
     
     <h2>Gameplay</h2>
 
@@ -65,6 +73,18 @@
                     <td>Requer 60 GB de espaço livre</td>
                 </tr>
             </tbody>
-    <   /table>
+    </table>
+    </div>
+    <footer>
+        <p>&copy; 2024 Gregory2786</p>
+    </footer>
+    <script>
+        function navigateToPage(select) {
+        const url = select.value;
+        if (url) {
+            window.location.href = url;
+        }
+        }
+    </script>
     </body>
 </html>

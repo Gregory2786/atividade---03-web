@@ -3,26 +3,34 @@
   <head>
     <title>Metalphor</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
   </head>
   <body>
-    <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="./astrobot.html">ASTRO BOT</a></li>
-        <li><a href="./balatro.html">Balatro</a></li>
-        <li><a href="./wukong.html">Black Myth: Wukong</a></li>
-        <li><a href="./elden.html">Elden Ring Shadow of the Erdtree</a></li>
-        <li><a href="./fantasy.html">Final Fantasy VII Rebirth</a></li>
-
-    </ul>
+    <header>
+        <div class="logo"><a href="../index.html">G-News</a></div>
+        <div class="select-container">
+          <label for="game-select">Escolha um jogo:</label>
+          <select id="game-select" onchange="navigateToPage(this)">
+            <option value="" disabled selected>Selecione...</option>
+            <option value="/pages/astrobot.html">ASTRO BOT</option>
+            <option value="/pages/balatro.html">Balatro</option>
+            <option value="/pages/wukong.html">Black Myth: Wukong</option>
+            <option value="/pages/elden.html">Elden Ring Shadow of the Erdtree</option>
+            <option value="/pages/fantasy.html">Final Fantasy VII Rebirth</option>
+            <option value="/pages/metalphor.html">Metaphor: ReFantazio</option>
+          </select>
+        </div>
+      </header>
+      <div class = "container">
    
     <h1>O jogo</h1>
-    <p>Metaphor: ReFantazio é um RPG desenvolvido pelo Studio Zero e publicado pela Atlus .</p>
-    <p>Foi seu primeiro jogo totalmente original desde a criação do estúdio em 2016, e foi liderado</p>
-    <p>criativamente pelo diretor Katsura Hashino , pelo artista de personagens Shigenori Soejima e pelo</p>
-    <p> compositor musical Shoji Meguro , todos os quais já contribuíram para vários títulos da franquia Megami Tensei .</p>
-    <p>O jogo se passa em um cenário de fantasia de inspiração medieval europeia, considerado o "espelho" do cenário </p>
-    <p>contemporâneo do mundo real, e segue um protagonista não silencioso que deve embarcar em uma jornada para proteger </p>
-    <p>seu reino, enquanto supera inúmeros obstáculos e forma alianças com muitos companheiros que encontra ao longo do caminho.</p>
+    <p>Metaphor: ReFantazio é um RPG desenvolvido pelo Studio Zero e publicado pela Atlus .
+    Foi seu primeiro jogo totalmente original desde a criação do estúdio em 2016, e foi liderado
+    criativamente pelo diretor Katsura Hashino , pelo artista de personagens Shigenori Soejima e pelo
+    compositor musical Shoji Meguro , todos os quais já contribuíram para vários títulos da franquia Megami Tensei .
+    O jogo se passa em um cenário de fantasia de inspiração medieval europeia, considerado o "espelho" do cenário 
+    contemporâneo do mundo real, e segue um protagonista não silencioso que deve embarcar em uma jornada para proteger 
+    seu reino, enquanto supera inúmeros obstáculos e forma alianças com muitos companheiros que encontra ao longo do caminho.</p>
 
     <h2>Gameplay</h2>
 
@@ -56,6 +64,18 @@
             </tr>
         </tbody>
     </table>
+    </div>
+    <footer>
+        <p>&copy; 2024 Gregory2786</p>
+    </footer>
+    <script>
+        function navigateToPage(select) {
+        const url = select.value;
+        if (url) {
+            window.location.href = url;
+        }
+        }
+    </script>
   </body>
 
 </html>

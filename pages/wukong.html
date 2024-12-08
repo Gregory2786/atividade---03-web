@@ -3,26 +3,35 @@
   <head>
     <title>Black myth Wukong</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
   </head>
   <body>
-    <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="./astrobot.html">ASTRO BOT</a></li>
-        <li><a href="./balatro.html">Balatro</a></li>
-        <li><a href="./elden.html">Elden Ring Shadow of the Erdtree</a></li>
-        <li><a href="./fantasy.html">Final Fantasy VII Rebirth</a></li>
-        <li><a href="./metalphor.html">Metaphor: ReFantazio</a></li>
-    </ul>
+    <header>
+        <div class="logo"><a href="../index.html">G-News</a></div>
+        <div class="select-container">
+          <label for="game-select">Escolha um jogo:</label>
+          <select id="game-select" onchange="navigateToPage(this)">
+            <option value="" disabled selected>Selecione...</option>
+            <option value="/pages/astrobot.html">ASTRO BOT</option>
+            <option value="/pages/balatro.html">Balatro</option>
+            <option value="/pages/wukong.html">Black Myth: Wukong</option>
+            <option value="/pages/elden.html">Elden Ring Shadow of the Erdtree</option>
+            <option value="/pages/fantasy.html">Final Fantasy VII Rebirth</option>
+            <option value="/pages/metalphor.html">Metaphor: ReFantazio</option>
+          </select>
+        </div>
+      </header>
+      <div class = "container">
     <h1>O jogo</h1>
-    <p>Black Myth: Wukong é um RPG de ação enraizado na mitologia chinesa, desenvolvido pela Game Science.</p>
-    <p>A história é baseada no romance Journey to the West do século XVI , um dos Quatro Grandes Romances </p> 
-    <p>Clássicos da literatura chinesa. Você partirá como o Destined One para se aventurar nos desafios e </p>
-    <p>maravilhas que estão por vir, para descobrir a verdade obscura sob o véu de uma lenda gloriosa do passado.</p>
-    <p>Como o Destined One , você encontrará inimigos poderosos e rivais dignos ao longo de sua jornada. Entre em um reino</p>
-    <p>fascinante repleto de maravilhas e descobertas da mitologia chinesa antiga! Aventure-se por paisagens de tirar o fôlego</p>
-    <p>no conto clássico de Journey to the West, criando um novo épico de aventuras desconhecidas. Além de dominar várias técnicas</p>
-    <p>de cajado, você também pode combinar livremente diferentes magias, habilidades, armas e equipamentos para encontrar a estratégia </p>
-    <p>vencedora que melhor se adapta ao seu estilo de combate</p>
+    <p>Black Myth: Wukong é um RPG de ação enraizado na mitologia chinesa, desenvolvido pela Game Science.
+    A história é baseada no romance Journey to the West do século XVI , um dos Quatro Grandes Romances  
+    Clássicos da literatura chinesa. Você partirá como o Destined One para se aventurar nos desafios e 
+    maravilhas que estão por vir, para descobrir a verdade obscura sob o véu de uma lenda gloriosa do passado.
+    Como o Destined One , você encontrará inimigos poderosos e rivais dignos ao longo de sua jornada. Entre em um reino
+    fascinante repleto de maravilhas e descobertas da mitologia chinesa antiga! Aventure-se por paisagens de tirar o fôlego
+    no conto clássico de Journey to the West, criando um novo épico de aventuras desconhecidas. Além de dominar várias técnicas
+    de cajado, você também pode combinar livremente diferentes magias, habilidades, armas e equipamentos para encontrar a estratégia 
+    vencedora que melhor se adapta ao seu estilo de combate</p>
 
     <h2>Gameplay</h2>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/yV4X51KJGNI?si=Pvh1l_OP8RbuaA83" title="YouTube video player" frameborder="0" 
@@ -63,5 +72,17 @@
             </tr>
         </tbody>
     </table>
+</div>
+    <footer>
+        <p>&copy; 2024 Gregory2786</p>
+    </footer>
+    <script>
+        function navigateToPage(select) {
+        const url = select.value;
+        if (url) {
+            window.location.href = url;
+        }
+        }
+    </script>
   </body>
 </html>
